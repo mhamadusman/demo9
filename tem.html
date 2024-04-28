@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .carousel-indicators {
+      bottom: -40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 1;
+    }
+    .carousel-indicators button {
+      background-color: black;
+      border: 1px solid red;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 50%;
+    }
+    .carousel-indicators .active {
+      background-color: red;
+    }
+    .carousel-inner .carousel-item img {
+      width: 150px;
+      height: 200px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex">
+            <img src="./banner1.png" class="d-block" alt="Slide 1">
+            <img src="./banner1.png" class="d-block" alt="Slide 2">
+            <img src="./banner1.png" class="d-block" alt="Slide 3">
+            <img src="./banner1.png" class="d-block" alt="Slide 4">
+            <img src="./banner1.png" class="d-block" alt="Slide 5">
+            <img src="./banner1.png" class="d-block" alt="Slide 6">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex">
+            <img src="./banner1.png" class="d-block" alt="Slide 7">
+            <img src="./banner1.png" class="d-block" alt="Slide 8">
+            <img src="./banner1.png" class="d-block" alt="Slide 9">
+            <img src="./banner1.png" class="d-block" alt="Slide 10">
+            <img src="./banner1.png" class="d-block" alt="Slide 11">
+            <img src="./banner1.png" class="d-block" alt="Slide 12">
+          </div>
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
